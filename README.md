@@ -1,40 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## Running the Project Locally
 
-## Getting Started
+Follow these steps to set up and run the project locally:
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Install NVM (Node Version Manager)**  
+   If you don’t have NVM installed, follow the installation guide from the [NVM GitHub repository](https://github.com/nvm-sh/nvm).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Node.js 18.18.0**  
+   Run the following command to install the required Node.js version:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+   nvm install 18.18.0
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. **Use Node.js 18.18.0**
+   Activate the installed Node.js version: nvm use 18.18.0
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+4. **Install Dependencies**
+   Ensure you have npm or yarn installed (comes with Node.js). Install the project dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   npm install
 
-## Learn More
+5. **Running in Development Mode**
+   To start the development server, run:
 
-To learn more about Next.js, take a look at the following resources:
+   npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+   PORT: - http://localhost:5001
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. **Running in Production Mode**
+   Build the Project
+   Create a production build of the application:
 
-## Deploy on Vercel
+   npm run build && npm run start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   PORT:- http://localhost:8080
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+   **Troubleshooting**
+   If you encounter issues:
+
+   nvm use 18.18.0
+
+   npm install
+
+   If issues persist, try deleting the node_modules folder and reinstalling dependencies
+   rm -rf node_modules
+
+   npm install

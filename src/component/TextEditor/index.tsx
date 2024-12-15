@@ -196,7 +196,9 @@ const RichTextEditor: React.FC = () => {
           minHeight: '200px',
           marginBottom: '10px',
         }}
-        onClick={() => document.querySelector('.DraftEditor-root')?.focus()}
+        onClick={() =>
+          (document.querySelector('.DraftEditor-root') as HTMLElement)?.focus()
+        }
       >
         {editorState ? (
           <Editor
